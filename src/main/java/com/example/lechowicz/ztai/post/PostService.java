@@ -1,4 +1,4 @@
-package com.example.lechowicz.ztai;
+package com.example.lechowicz.ztai.post;
 
 import org.springframework.stereotype.Service;
 

@@ -1,4 +1,4 @@
-package com.example.lechowicz.ztai;
+package com.example.lechowicz.ztai.post;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -18,15 +18,15 @@ public class PostController {
         this.postService = postService;
     }
 
-    @CrossOrigin(origins = "http://localhost:4200")
-    @GetMapping("/api/posts")
-    public List<Post> getAllPosts() {
-        return postService.getAll();
-    }
+    //@CrossOrigin(origins = "http://localhost:4200")
+    //@GetMapping("/api/posts")
+    //public List<Post> getAllPosts() {
+    //    return postService.getAll();
+    //}
 
-    @CrossOrigin(origins = "http://localhost:4200")
-    @GetMapping("/api/posts/{id}")
-    public Post get(@PathVariable int id) {
-        return postService.get(id);
-    }
+    //@CrossOrigin(origins = "http://localhost:4200")
+    //@GetMapping("/api/posts/{id}")
+    //public Post get(@PathVariable int id) {
+    //    return postService.get(id);
+    //}
 }
